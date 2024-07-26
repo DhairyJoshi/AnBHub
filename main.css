@@ -1,0 +1,64 @@
+/*-------------------- Nav ------------------- */
+.line
+{
+  height: 1.5rem;
+  border-right: 1.8px solid rgb(129, 140, 248);
+}
+.current
+{
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 13px;
+  color: rgb(17, 24, 39);
+}
+.A {
+  padding: 0.5rem 0rem;
+  position: relative;
+}
+.A::after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.125rem;
+  left: 50%;
+  position: absolute;
+  background: rgb(107, 120, 139); 
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.otherA
+{
+  color: rgb(129, 140, 248);
+}
+.otherA::after
+{
+  background: rgb(129, 140, 248);
+}
+.A:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+.Asell
+{
+  background-color: rgb(129 140 248);   
+  color: white; 
+  padding: 5px 15px; 
+  border-radius: 5px;
+  position: relative;
+  border: 2px solid white;
+}
+.Asell:hover
+{
+  background-color: white;
+  border: 2px solid rgb(129, 140, 248);
+  color: rgb(129, 140, 248);
+}
+.px-5vw
+{
+  padding: 0vw 5vw;
+}
+.h-50vh
+{
+  height: 50vh;
+}
